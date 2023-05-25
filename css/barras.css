@@ -1,0 +1,87 @@
+
+:root{
+  --tiempo:15s
+
+}
+ 
+ 
+span{
+
+    color: #000;
+}
+.card-barras{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    width:800px;
+    letter-spacing: 1px;
+    margin:auto;
+    padding:10px;
+    border: 5px solid var(--primary-color);
+    border-radius: 20px;
+    background-color:rgba(9, 17, 30, 0.975)
+  
+}
+.container{
+    width: 100%;
+  font-size:.1rem;
+ 
+   
+}
+ 
+.skills{
+
+    text-align:right;
+    padding: 3px;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 15px ;
+    
+}
+ 
+
+.html{
+    background-color: var(--primary-color);
+    animation: fillhtml var(--tiempo) forwards;
+}
+.css{
+
+    background-color: var(--primary-color);
+    animation: fillcss var(--tiempo) forwards;
+}
+
+.javascript{
+
+    background-color: var(--primary-color);
+    animation: filljavascript var(--tiempo) forwards;
+}
+
+.react{
+
+    background-color: var(--primary-color);
+    animation: fillreact var(--tiempo) forwards;
+}
+
+@keyframes fillhtml{
+
+    0%{width: 0;}
+    100%{width:90%}
+}
+
+@keyframes fillcss{
+
+    0%{width: 0;}
+    100%{width:70%}
+}
+@keyframes filljavascript {
+
+    0%{width: 0;}
+    100%{width:55%}
+}
+
+@keyframes fillreact {
+
+    0%{width: 0;}
+    100%{width:35%}
+}

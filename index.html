@@ -2,104 +2,347 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/icons/ok.png" type="image/x-icon">
-    <title>WEB_SITE</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/ok.png" type="image/x-icon">
+  <title>WEB_SITE</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/barras.css" />
 </head>
 
 <body class="dark">
 
-    <!-- header -->
-    <header class="header">
-        <div class="switches">
-            <div id="toggle-theme" class="toggle-theme">
-                <img id="toggle-icon" src="./assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon" />
-                <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
-            </div>
-           
-        </div>
-        <div id="toggle-colors" class="colors">
-            <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+  <!-- header -->
+  <header class="header">
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="./assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon" />
+        <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+      </div>
 
-            <div data-color=" hsl(63, 93%, 49%)" class="colors__item colors__item--yellow"></div>
-
-            <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
-
-            <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
-
-
-            <div data-color=" hsl(2, 91%, 52%)" class="colors__item colors__item--red"></div>
-
-
-        </div>
-    </header>
-
-    <!-- main -->
-    <div class="main">
-        <section id="HOME" class="section-home">
-
-            <marquee width="600">
-                <h2 class="colored">Hola, bienvenido a mi WebSite: Soy, Juan Marin.</h2>
-            </marquee>
-            <div class="contenedor__image">
-                <img src="assets/images/central.jpg" class="img-central" alt="">
-            </div>
-            <div class="contenedor__botones">
-                <a href="#"><button class="boton">HOME</button></a>
-                <a href="#ABOUT"><button class="boton">ABOUT</button></a>
-                <a href="#SERVICES"><button class="boton">SERVICES</button></a>
-                <a href="#CONTACT"><button class="boton">CONTACT</button></a>
-                <a href="https://juamaya.github.io/curricujuan.github.io" target="_blank"><button class="boton">VER CV</button></a>
-                <button class="boton">DESCARGAR CV</button>
-            </div>
-        </section>
-
-        <section id="ABOUT" class="section-home">
-            <hr>
-            <h1 class="colored">About me</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fuga possimus rem odio tenetur porro. Saepe aliquid labore tempora sunt modi accusantium atque dolores, harum eos eaque aperiam ad ullam!</h3>
-            <img src="assets/images/central1.jpg" width="400" class="img " alt="">
-        </section>
-
-        <section id="SERVICES" class="section-services">
-            <hr>
-            <h1 class="colored">Services </h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fuga possimus rem odio tenetur porro. Saepe aliquid labore tempora sunt modi accusantium atque dolores, harum eos eaque aperiam ad ullam!</h3>
-            <img src="assets/images/git1.webp" class="img-git1" alt="">
-            <hr>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fuga possimus rem odio tenetur porro. Saepe aliquid labore tempora sunt modi accusantium atque dolores, harum eos eaque aperiam ad ullam!</h3>
-            <img src="assets/images/ilustracion1.webp" width="300" class="img-instalacion" alt="">
-
-            
-        </section>
-
-        <section id="CONTACT" class="section-contact">
-            <hr>
-            <h1 class="colored">Contact </h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fuga possimus rem odio tenetur porro. Saepe aliquid labore tempora sunt modi accusantium atque dolores, harum eos eaque aperiam ad ullam!</h3>
-            <img src="assets/images/20.gif" width="150" class="img-gif" alt="">
-        </section>
     </div>
+    <div id="toggle-colors" class="colors">
+      <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
 
-    <!-- footer -->
-    <footer class="footer">AMAYA💥2023</footer>
+      <div data-color=" hsl(63, 93%, 49%)" class="colors__item colors__item--yellow"></div>
 
+      <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
 
-
-
-
-
-
+      <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
 
 
+      <div data-color=" hsl(2, 91%, 52%)" class="colors__item colors__item--red"></div>
+
+
+    </div>
+  </header>
+
+  <!-- main -->
+  <div class="main">
+
+    <!-- section HOME -->
+    <section id="HOME" class="section-home">
+
+      <marquee width="600">
+        <h2 class="colored">Hola, bienvenido a mi WebSite: Soy, Juan Marin.</h2>
+      </marquee>
+      <div class="contenedor__image">
+        <img src="assets/images/portada.jpg" class="img-portada" alt="">
+      </div>
+      <div class="contenedor__botones">
+        <a href="#"><button class="boton">HOME</button></a>
+        <a href="#ABOUT"><button class="boton">ABOUT</button></a>
+        <a href="#SERVICES"><button class="boton">SERVICES</button></a>
+        <a href="#CONTACT"><button class="boton">CONTACT</button></a>
+        <a href="https://juamaya.github.io/curricujuan.github.io" target="_blank"><button class="boton">VER
+            CV</button></a>
+        <a href="#" download="curriculum.pdf"> <button class="boton">DESCARGAR CV</button></a>
+      </div>
+
+    </section>
+    <!-- section ABOUT -->
+    <section id="ABOUT" class="section-home">
+      <hr>
+      <h1 class="colored">About me</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fuga possimus rem odio tenetur porro.
+
+
+        <div class="pageAbout">
+          <div class="formas">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#0f0 " fill-opacity="1"
+                d="M0,128L15,154.7C30,181,60,235,90,261.3C120,288,150,288,180,261.3C210,235,240,181,270,138.7C300,96,330,64,360,64C390,64,420,96,450,90.7C480,85,510,43,540,64C570,85,600,171,630,202.7C660,235,690,213,720,176C750,139,780,85,810,85.3C840,85,870,139,900,170.7C930,203,960,213,990,213.3C1020,213,1050,203,1080,213.3C1110,224,1140,256,1170,229.3C1200,203,1230,117,1260,85.3C1290,53,1320,75,1350,112C1380,149,1410,203,1425,229.3L1440,256L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z">
+              </path>
+            </svg>
+          </div>
+
+
+          <div class="books">
+            <div class="book">
+              <p> Juan Marin</p>
+              <div class="cover ">
+                <p>About Me</p>
+              </div>
+            </div>
+
+            <div class="book">
+              <img src="./assets/images/juan.jpg" alt="Juan" width="155" />
+              <div class="cover">
+                <p>About Me</p>
+              </div>
+            </div>
+
+            <div class="book">
+              <p> 633 03 94 85</p>
+              <div class="cover">
+                <p>PHONE</p>
+              </div>
+            </div>
+
+            <div class="book">
+              <p>correo@correo.hotmail</p>
+              <div class="cover">
+                <p>EMAIL</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <h1 class="colored">Skills </h1>
+
+          <!-- card-barras -->
+
+          <div class="card-barras">
+
+            <div class="container">
+
+              <img src="assets/images/git1.webp" class="img-git1" width="120" alt="">
+            </div>
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html  colored"><span>➡ 90% </span> </div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+              <div class="skills css colored "><span>➡ 70%</span></div>
+            </div>
+            <p>JAVASCRIPT</p>
+            <div class="container    ">
+              <div class="skills javascript colored"><span>➡ 55%</span></div>
+            </div>
+            <p>REACT</p>
+            <div class="container    ">
+              <div class="skills react colored"><span>➡ 35%</span></div>
+            </div>
+          </div>
+          <!--END card-barras -->
+
+
+
+    </section>
+    <!-- section SERVICES -->
+    <section id="SERVICES" class="section-services">
+      <hr>
+      <h1 class="colored">SERVICES</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, modi vel mollitia quis perferendis enim ullam
+      </p>
+      <div class="container__card">
+
+        <div class="card">
+          <div class="face front">
+            <img src="./assets/images/ilustracion.webp" alt="ilustracion" />
+            <h3>Diseño Web</h3>
+          </div>
+
+          <div class="face back">
+            <h3>Diseño Web</h3>
+            <p>Creacion de paginas web responsivas. </p>
+            <div class="link">
+              <a href="./assets/images/ilustracion.webp" target="_blank">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face front">
+            <img src="./assets/images/instalacion.jpg" alt="ilustracion" />
+            <h3>Instalaciones electricas.</h3>
+          </div>
+
+          <div class="face back">
+            <h3>Instalaciones electricas.</h3>
+            <p>Instalacion de control: Refrigeracion de alternadores. </p>
+            <div class="link">
+              <a href="./assets/images/instalacion.jpg" target="_blank">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face front">
+            <img src="./assets/images/cnc-casera.jpg" alt="cnc-casera" />
+            <h3>cnc-casera</h3>
+          </div>
+
+          <div class="face back">
+            <h3>cnc-casera</h3>
+            <p>Creacion de una maqina cnc casera. </p>
+            <div class="link">
+              <a href="./assets/images/cnc-casera.jpg" target="_blank">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, modi vel mollitia quis perferendis enim ullam
+      </p>
+      <div class="container__card">
+        <div class="card">
+          <div class="face front">
+            <img src="./assets/images/spot-welder.jpg" alt="ilustracion" />
+            <h3>Spot Welder.</h3>
+          </div>
+
+          <div class="face back">
+            <h3>Soldador de punto.</h3>
+            <p>Fabricado con el transformador de un microondas. </p>
+            <div class="link">
+              <a href="./assets/images/spot-welder.jpg" target="_blank">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face front">
+            <img src="./assets/images/cargador_18650.jpg" alt="cargador_18650" />
+            <h3>Cargador_18650 </h3>
+          </div>
+
+          <div class="face back">
+            <h3>Cargador_18650</h3>
+            <p>Creacion de un Cargador de celdas de litio con capacidad de 8 celdas. </p>
+            <div class="link">
+              <a href="./assets/images/cargador_18650.jpg" target="_blank">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face front">
+            <img src="./assets/images/foam-cutter.jpg" alt="foam-cutter" />
+            <h3>Spot Welder.</h3>
+          </div>
+
+          <div class="face back">
+            <h3>Foam Cutter</h3>
+            <p>Fabricacion de nn cortador de espuma de poliestireno. </p>
+            <div class="link">
+              <a href="./assets/images/foam-cutter.jpg" target="_blank">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeria de fotos -->
+      <hr>
+      <h3>Aqui tienes un enlace para ver una coleccion de fotos.
+    </h3>
+      <div class="galeria  ">
+        <a href="https://juamaya.github.io" target="_blank">
+          Ver Galeria de fotos 💥 </a>
+
+      </div>
+
+
+
+    </section>
+
+
+    <!-- section CONTACT -->
+    <section id="CONTACT" class="section-contact">
+      <hr>
+      <h1 class="colored">Contact with me</h1>
+
+
+      <!-- FORMULARIO -->
+      <div class="container ">
+        <div class="container-form">
+          <form action="#ABOUT">
+            <div class="form-row">
+              <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label>First Name</label>
+              </div>
+              <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label>Last Name</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label>Email Address</label>
+              </div>
+              <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label>Website Name</label>
+              </div>
+            </div>
+
+            <div class="form-row ">
+              <div class="input-data textarea">
+                <textarea cols={30} rows={10} required></textarea>
+                <div class="underline"></div>
+                <label> Write your message</label>
+              </div>
+            </div>
+            <div class="form-row submit-btn ">
+              <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="SEND" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+    </section>
+  </div>
+
+
+
+  <!-- footer -->
+
+
+  <div class="caja">
+    <div class="button">
+      <div class="box">H</div>
+      <div class="box">O</div>
+      <div class="box">V</div>
+      <div class="box">E</div>
+      <div class="box">R</div>
+      <h2> 💫 2023</h2>
+    </div>
+  </div>
 
 
 
 
-    <script src="js/index.js"></script>
+
+
+
+
+
+
+
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
