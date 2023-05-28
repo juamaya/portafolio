@@ -284,7 +284,7 @@ main {
 
 .card .back {
   transform: rotateY(180deg);
-  background: rgb(33, 109, 153);
+  background: var(--primary-color);
   padding: 10px;
   color: #f3f3f3;
   display: flex;
@@ -317,6 +317,7 @@ main {
 .card:hover .back {
   transform: rotateY(360deg);
   cursor: pointer;
+   
 }
 
 /* contact FORMULARIO*/

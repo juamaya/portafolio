@@ -63,16 +63,22 @@ span{
     animation: fillreact var(--tiempo) forwards;
 }
 
+.plc{
+
+    background-color: var(--primary-color);
+    animation: fillplc var(--tiempo) forwards;
+}
+
 @keyframes fillhtml{
 
     0%{width: 0;}
-    100%{width:90%}
+    100%{width:80%}
 }
 
 @keyframes fillcss{
 
     0%{width: 0;}
-    100%{width:70%}
+    100%{width:60%}
 }
 @keyframes filljavascript {
 
@@ -84,4 +90,11 @@ span{
 
     0%{width: 0;}
     100%{width:35%}
+}
+
+
+@keyframes fillplc {
+
+    0%{width: 0;}
+    100%{width:70%}
 }
