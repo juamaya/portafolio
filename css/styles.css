@@ -4,6 +4,7 @@
   --bg-color: hsl(0, 0%, 15%);
   --bg-card-color: hsl(0, 0%, 25%);
   --transition: color 0.1s, background-color 0.2s ease-in-out;
+  --sombra:80px;
 }
 
 * {
@@ -146,6 +147,7 @@ main {
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: var(--primary-color);
+  box-shadow:var(--sombra) var(--sombra) var(--sombra) var(--primary-color);
   cursor: pointer;
 }
 .img-central {
@@ -510,7 +512,7 @@ a {
 /* RESPOSIVO */
  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .contenedor__botones {
     display: block;
   }
