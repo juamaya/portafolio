@@ -68,7 +68,7 @@ body.dark header {
 }
 .colors__item {
   margin: 2px;
-  width: 20px;
+  width: 30px;
   height: 20px;
   border: 1px solid var(--text-color);
   cursor: pointer;
@@ -127,6 +127,7 @@ main {
   height: 100%;
 }
 .contenedor__image {
+ 
   width: 100%;
   height: 320px;
   overflow: hidden;
@@ -137,8 +138,9 @@ main {
   position: top;
 }
 .boton {
+  font-weight: bold;
   width: 150px;
-  height: 30px;
+  height: 40px;
   margin-left: 15px;
   margin-top: -5px;
   margin-bottom: 20px;
@@ -156,7 +158,8 @@ main {
 }
 
 .boton:hover {
-  background-color: aqua;
+  background-color: rgb(66, 25, 190);
+  color: #fff;
 }
 
 .footer {
@@ -175,16 +178,17 @@ main {
 .books {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .book {
   position: relative;
   border-radius: 10px;
   width: 270px;
   height: 300px;
-  margin: 10px;
+  margin: 20px;
   background-color: rgb(67, 72, 65);
   -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 12px 12px 12px #000;
+  box-shadow:22px 22px 22px var(--primary-color);
   -webkit-transform: preserve-3d;
   -ms-transform: preserve-3d;
   transform: preserve-3d;
@@ -201,6 +205,7 @@ main {
   justify-content: center;
   color: #000;
 }
+ 
 
 .cover {
   top: 0;
@@ -216,7 +221,7 @@ main {
   -ms-transform-origin: 0;
   transform-origin: 0;
   -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 1px 1px 12px #000;
+  /* box-shadow: 1px 1px 12px #000; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,6 +246,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  -webkit-box-reflect: below 0px solid red;
 }
 .card {
   position: relative;
@@ -487,6 +493,19 @@ a {
 .button:hover .box:before {
   transform: translateY(0);
 }
+
+
+
+#particles-js{
+ 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  
+  }
+
 
 /* RESPOSIVO */
  
