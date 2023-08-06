@@ -508,6 +508,31 @@ a {
   
   }
 
+//RELOJ
+
+fieldset{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+ 
+}
+
+#fecha{
+  font-size: 1.5em;
+  color: var(--primary-color);
+   
+  }
+
+#reloj{
+    font-size: 3em;
+    color:var(--primary-color);
+}
+
+
+
+
+
 
 /* RESPOSIVO */
  
