@@ -4,7 +4,7 @@
   --bg-color: hsl(0, 0%, 15%);
   --bg-card-color: hsl(0, 0%, 25%);
   --transition: color 0.1s, background-color 0.2s ease-in-out;
-  --sombra:80px;
+  --sombra: 80px;
 }
 
 * {
@@ -86,7 +86,8 @@ body.dark header {
   --primary-color: hsl(276, 84%, 56%);
 }
 .colors__item--orange {
-  --primary-color: hsl(46, 84%, 56%);
+  --primary-color: hsl(24, 98%, 47%);
+
 }
 .colors__item--red {
   --primary-color: hsl(2, 91%, 52%);
@@ -99,6 +100,8 @@ body.dark header {
 }
 
 /* MAIN */
+ 
+ 
 main {
   margin: 0;
   padding: 0;
@@ -128,10 +131,11 @@ main {
   height: 100%;
 }
 .contenedor__image {
- 
-  width: 100%;
-  height: 320px;
-  overflow: hidden;
+  width: 80%;
+  height: 450px;
+ overflow: hidden;
+ position:center;
+
   margin: auto;
 }
 
@@ -147,8 +151,16 @@ main {
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: var(--primary-color);
-  box-shadow:var(--sombra) var(--sombra) var(--sombra) var(--primary-color);
+  box-shadow: var(--sombra) var(--sombra) var(--sombra) var(--primary-color);
   cursor: pointer;
+  transition-property: background-color,  color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+ 
+}
+.inicio{
+  margin: 10px;
+width: 80px;
 }
 .img-central {
   border: 5px solid var(--primary-color);
@@ -162,6 +174,10 @@ main {
 .boton:hover {
   background-color: rgb(66, 25, 190);
   color: #fff;
+  transition-property: background-color,  color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+ 
 }
 
 .footer {
@@ -190,7 +206,7 @@ main {
   margin: 20px;
   background-color: rgb(67, 72, 65);
   -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow:22px 22px 22px var(--primary-color);
+  box-shadow: 22px 22px 22px var(--primary-color);
   -webkit-transform: preserve-3d;
   -ms-transform: preserve-3d;
   transform: preserve-3d;
@@ -205,14 +221,13 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #000;
+  color:var(--primary-color);
 }
- 
 
 .cover {
   top: 0;
   position: absolute;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -233,6 +248,7 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  color:black;
 }
 
 .book:hover .cover {
@@ -263,12 +279,14 @@ main {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 2s;
 }
 .card .front {
   transform: rotateY(0deg);
   box-shadow: 0 5px 10px #000;
   border: 5px solid var(--primary-color);
+  
+ 
 }
 
 .card .front img {
@@ -321,11 +339,16 @@ main {
 }
 .card:hover .front {
   transform: rotateY(180deg);
+ 
+  transition:  2s;
+
 }
 .card:hover .back {
   transform: rotateY(360deg);
   cursor: pointer;
-   
+ 
+  transition:   2s;
+
 }
 
 /* contact FORMULARIO*/
@@ -496,48 +519,75 @@ a {
   transform: translateY(0);
 }
 
-
-
-#particles-js{
- 
+#particles-js {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   z-index: -1;
-  
-  }
+}
 
 //RELOJ
 
-fieldset{
-    width: 350px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 5px;
- 
+fieldset {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
 }
 
-#fecha{
+#fecha {
   font-size: 1.5em;
   color: var(--primary-color);
-   
-  }
-
-#reloj{
-    font-size: 3em;
-    color:var(--primary-color);
 }
 
-
-
-
-
+#reloj {
+  font-size: 3em;
+  color: var(--primary-color);
+}
 
 /* RESPOSIVO */
- 
 
 @media screen and (max-width: 900px) {
+  .contenedor__botones {
+    display: block;
+  }
+
+  .container__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-portada {
+    width: 100%;
+  }
+
+  .card-barras {
+    max-width: 90%;
+  }
+  .books {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .text {
+    font-size: 30px;
+  }
+  .container form {
+    padding: 10px 0 0 0 0;
+  }
+  .container form .form-row {
+    display: block;
+  }
+
+  form .form-row .input-data {
+    margin: 35px 0 !important;
+  }
+
+  .submit-btn .input-data {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .contenedor__botones {
     display: block;
   }
