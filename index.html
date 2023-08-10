@@ -9,6 +9,11 @@
   <title>WEB_Portafolio</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/barras.css" />
+
+  <!-- ICONOS -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 
 <body class="dark init">
@@ -47,23 +52,32 @@
 
       <!-- section HOME -->
       <section id="HOME" class="section-home">
- 
-        <marquee width="800"      >
-          <h1   class="colored">Hola, bienvenido a mi WebSite.</h1>
-        </marquee> 
+
+        <marquee width="800">
+          <h1 class="colored">Hola, bienvenido a mi WebSite.</h1>
+        </marquee>
         <div class="contenedor__image">
-           <img src="assets/images/portada.jpg" class="img-portada"   alt="img-portada">
+          <img src="assets/images/portada.jpg" class="img-portada" alt="img-portada">
         </div>
         <div class="contenedor__botones">
-          <a href="#"><button class="boton">HOME</button></a>
+          <a href="#"><button class="boton"><span class="material-symbols-outlined">
+                Home
+              </span>HOME</button></a>
           <a href="#ABOUT"><button class="boton">ABOUT</button></a>
           <a href="#SERVICES"><button class="boton">SERVICES</button></a>
           <a href="#CONTACT"><button class="boton">CONTACT</button></a>
           <a href="https://juamaya.github.io/curricujuan.github.io" target="_blank"><button class="boton">VER
               CV</button></a>
-          <a href="curriculum.pdf" download="curriculum.pdf"> <button class="boton">DESCARGAR CV</button></a>
+          <a href="curriculum.pdf" download="curriculum.pdf">
+            <button class="boton">
+              DESCARGAR CV
+              <span class="material-symbols-outlined">
+                download
+              </span>
+            </button>
+          </a>
         </div>
-        
+
 
       </section>
       <!-- section ABOUT -->
@@ -83,17 +97,17 @@
           </div>
 
 
-       <!-- RELOJ -->
-       <fieldset>
-        <legend id="fecha"> </legend>
-        <h2 id="reloj"> </h2>
-      </fieldset>
- 
-
-      <!-- END RELOJ -->
+          <!-- RELOJ -->
+          <fieldset>
+            <legend id="fecha"> </legend>
+            <h2 id="reloj"> </h2>
+          </fieldset>
 
 
-          <h2 class="colored" >Libros de presentacion.</h2>
+          <!-- END RELOJ -->
+
+
+          <h2 class="colored">Libros de presentacion.</h2>
           <div class="books">
             <div class="book">
               <div>
@@ -135,7 +149,7 @@
           </div>
 
           <hr>
-   
+
 
           <h1 class="colored">Skills </h1>
 
@@ -291,15 +305,15 @@
 
         <!--   videos -->
         <hr>
-        <h3 class="colored">Aqui puedes ver un video.
-        </h3>
+        <h2 class="colored">Aqui puedes ver un video.
+        </h2>
         <video src="./assets/videos/BATTERY.mp4" width="80%" controls></video>
 
 
         <!-- Galeria de fotos -->
         <hr>
-        <h3 class="colored">Aqui tienes un enlace para ver una coleccion de fotos.
-        </h3>
+        <h2 class="colored">Aqui tienes un enlace para ver una coleccion de fotos.
+        </h2>
         <div class="galeria  ">
           <a href="https://juamaya.github.io/galeria" target="_blank">
             Ver Galeria de fotos 💥 </a>
@@ -365,10 +379,12 @@
     </section>
     </div>
 
-    
-      <a href="#"><button class="boton inicio">INICIO</button></a>
-     
-   
+
+    <a href="#"><button class="boton inicio"> <span class="material-symbols-outlined">
+          Home
+        </span>INICIO</button></a>
+
+
 
     <!-- footer -->
 
@@ -380,7 +396,7 @@
         <div class="box">V</div>
         <div class="box">E</div>
         <div class="box">R</div>
-        <h2 class="colored" > 💫 2023</h2>
+        <h2 class="colored"> 💫 2023</h2>
       </div>
     </div>
 
@@ -400,14 +416,14 @@
       {
         "particles": {
           "number": {
-            "value": 154,
+            "value": 100,
             "density": {
               "enable": true,
               "value_area": 800
             }
           },
           "color": {
-            "value": "#a3e83a"
+            "value": "#a3ff3a"
           },
           "shape": {
             "type": "polygon",
@@ -416,7 +432,7 @@
               "color": "#000000"
             },
             "polygon": {
-              "nb_sides": 6
+              "nb_sides": 7
             },
             "image": {
               "src": "img/github.svg",
@@ -448,8 +464,8 @@
             "enable": true,
             "distance": 150,
             "color": "#00ff00",
-            "opacity": 0.6,
-            "width": 2
+            "opacity": 0.4,
+            "width": 1
           },
           "move": {
             "enable": true,

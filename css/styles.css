@@ -1,3 +1,11 @@
+
+ 
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+ 
+
+
 :root {
   --primary-color: hsl(214, 84%, 56%);
   --text-color: hsl(0, 0%, 83%);
@@ -8,8 +16,10 @@
 }
 
 * {
+ 
   box-sizing: border-box;
   scroll-behavior: smooth;
+font-family: 'Roboto', sans-serif;
 }
 
 body {
