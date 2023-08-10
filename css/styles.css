@@ -232,8 +232,8 @@ width: 80px;
   height: 100%;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   -webkit-transform-origin: 0;
   -ms-transform-origin: 0;
   transform-origin: 0;
@@ -252,8 +252,8 @@ width: 80px;
 }
 
 .book:hover .cover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   -webkit-transform: rotatey(-80deg);
   -ms-transform: rotatey(-80deg);
   transform: rotatey(-80deg);
@@ -340,14 +340,14 @@ width: 80px;
 .card:hover .front {
   transform: rotateY(180deg);
  
-  transition:  2s;
+  transition:  1s;
 
 }
 .card:hover .back {
   transform: rotateY(360deg);
   cursor: pointer;
  
-  transition:   2s;
+  transition:   1s;
 
 }
 
@@ -418,7 +418,7 @@ form .form-row .textarea {
     #56d8e4,
     #9f01ea
   );
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .submit-btn .input-data:hover .inner {
