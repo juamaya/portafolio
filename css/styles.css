@@ -277,8 +277,8 @@ width: 80px;
 }
 .card {
   position: relative;
-  width: 200px;
-  height: 250px;
+  width: 250px;
+  height: 300px;
   margin: 1em;
 }
 .card .face {
@@ -294,7 +294,7 @@ width: 80px;
   transform: rotateY(0deg);
   box-shadow: 0 5px 10px #000;
   border: 5px solid var(--primary-color);
-  
+  transition: all 0.3s;
  
 }
 
@@ -327,6 +327,7 @@ width: 80px;
   justify-content: space-between;
   text-align: center;
   box-shadow: 0 5px 10px #000;
+  transition: all 0.3s;
 }
 
 .card .back .link {
