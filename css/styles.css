@@ -280,6 +280,7 @@ width: 80px;
   width: 250px;
   height: 300px;
   margin: 1em;
+
 }
 .card .face {
   position: absolute;
@@ -294,7 +295,7 @@ width: 80px;
   transform: rotateY(0deg);
   box-shadow: 0 5px 10px #000;
   border: 5px solid var(--primary-color);
-  transition: all 0.3s;
+  transition: all 0.3s ;
  
 }
 
